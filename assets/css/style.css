@@ -69,7 +69,7 @@ img {
 }
 
 .nav-btn {
-    flex: 1;
+    flex: 1; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,8 +85,7 @@ img {
     border-right: none;
 }
 
-.nav-btn.active,
-.nav-btn:hover {
+.nav-btn.active, .nav-btn:hover {
     background-color: var(--bg-btn-nav);
     color: var(--text-white);
 }
@@ -102,8 +101,8 @@ img {
     font-size: 18px;
     color: var(--text-white);
     border: 1px solid transparent;
-    background-image:
-        linear-gradient(var(--bg-btn-contact), var(--bg-btn-contact)),
+    background-image: 
+        linear-gradient(var(--bg-btn-contact), var(--bg-btn-contact)), 
         linear-gradient(135.66deg, #2F2F37 28.87%, rgba(47, 47, 55, 0) 76.42%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -128,7 +127,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 5%;
+    padding: 80px 5%; 
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
@@ -139,7 +138,7 @@ img {
     flex-direction: column;
     gap: 10px;
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Текст над вектором */
 }
 
 .subtitle {
@@ -157,7 +156,7 @@ img {
     line-height: 100%;
 }
 
-/* Центральний декоративний елемент */
+/* Векторний блок */
 .vector-block {
     position: absolute;
     top: 50%;
@@ -171,7 +170,7 @@ img {
 .abstract-img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: contain; 
 }
 
 .hero-action-container {
@@ -188,8 +187,7 @@ img {
     gap: 20px;
 }
 
-.lets-text,
-.work-text {
+.lets-text, .work-text {
     font-weight: 600;
     font-size: 58px;
     text-transform: uppercase;
@@ -205,7 +203,7 @@ img {
     justify-content: center;
     border-radius: 100px;
     background-color: var(--bg-accent);
-    box-shadow: inset 4px 4px 17.4px 0px rgba(255, 255, 255, 0.28);
+    box-shadow: inset 4px 4px 17.4px 0px rgba(255, 255, 255, 0.28); 
     transition: 0.3s;
 }
 
@@ -213,7 +211,7 @@ img {
     transform: scale(1.05);
 }
 
-/* Рухома стрічка */
+/* MARQUEE (Стрічка) */
 .marquee-section {
     width: 100%;
     height: 80px;
@@ -229,7 +227,7 @@ img {
     gap: 40px;
     padding-right: 40px;
     width: max-content;
-    animation: scrollMarquee 15s linear infinite;
+    animation: scrollMarquee 15s linear infinite; 
 }
 
 .marquee-item {
@@ -243,13 +241,8 @@ img {
 }
 
 @keyframes scrollMarquee {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 /* COLLAGE GRID */
@@ -257,14 +250,14 @@ img {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 40px 5%;
+    padding: 40px 5%; 
 }
 
 .collage-container {
     position: relative;
     width: 100%;
     max-width: 1596px;
-    padding-bottom: 32.08%;
+    padding-bottom: 32.08%; 
     margin: 0 auto;
 }
 
@@ -274,51 +267,89 @@ img {
     border-radius: 12px;
 }
 
-/* Розташування зображень */
-.img-1 {
-    width: 32.58%;
-    height: 69.14%;
-    top: 0;
-    left: 0;
+.img-1 { width: 32.58%; height: 69.14%; top: 0; left: 0; }
+.img-2 { width: 10.65%; height: 27.92%; top: 72.07%; left: 0; }
+.img-3 { width: 36.15%; height: 69.14%; top: 30.85%; left: 11.59%; z-index: 2; }
+.img-4 { width: 40.91%; height: 100%; top: 0; left: 33.83%; }
+.img-5 { width: 24.43%; height: 57.22%; top: 0; left: 75.56%; }
+.img-6 { width: 24.43%; height: 40.03%; top: 59.96%; left: 75.56%; }
+
+/* ABOUT SECTION */
+.about-section {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 5%;
 }
 
-.img-2 {
-    width: 10.65%;
-    height: 27.92%;
-    top: 72.07%;
-    left: 0;
+.about-container {
+    width: 100%;
+    max-width: 1596px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
 
-.img-3 {
-    width: 36.15%;
-    height: 69.14%;
-    top: 30.85%;
-    left: 11.59%;
-    z-index: 2;
+/* Верхній блок з текстом і кнопкою */
+.about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 50px;
 }
 
-.img-4 {
-    width: 40.91%;
-    height: 100%;
-    top: 0;
-    left: 33.83%;
+.about-text-container {
+    max-width: 1413px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
-.img-5 {
-    width: 24.43%;
-    height: 57.22%;
-    top: 0;
-    left: 75.56%;
+.about-subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    line-height: 100%;
 }
 
-.img-6 {
-    width: 24.43%;
-    height: 40.03%;
-    top: 59.96%;
-    left: 75.56%;
+.about-title {
+    font-weight: 600;
+    font-size: 58px;
+    text-transform: uppercase;
+    color: var(--text-white);
+    line-height: 100%;
 }
 
-/* Адаптивність */
+/* Кнопка "Know More" */
+.about-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 59px;
+    padding: 16px 24px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--text-white);
+    border: 1px solid transparent;
+    background-image: 
+        linear-gradient(var(--bg-btn-contact), var(--bg-btn-contact)), 
+        linear-gradient(135.66deg, #2F2F37 28.87%, rgba(47, 47, 55, 0) 76.42%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    transform: scale(1.05);
+}
+
+/* АДАПТИВНІСТЬ */
+/* Планшети (до 1024px) */
 @media (max-width: 1024px) {
     .navbar {
         flex-wrap: wrap;
@@ -327,7 +358,7 @@ img {
         gap: 20px;
         justify-content: center;
     }
-
+    
     .nav-links {
         position: relative;
         transform: none;
@@ -337,74 +368,87 @@ img {
         border-radius: 12px;
         border-bottom: 1px solid var(--border-color);
     }
-
+    
     .logo {
         flex: 1;
         text-align: left;
     }
-
+    
     .hero-sub {
         flex-direction: column;
         text-align: center;
         gap: 40px;
         padding: 40px 20px;
     }
-
+    
     .hero-action-container {
         align-items: center;
     }
-
+    
     .title {
         font-size: 60px;
     }
-
-    .lets-text,
-    .work-text {
+    
+    .lets-text, .work-text {
         font-size: 44px;
+    }
+
+    /* Адаптація для блоку About */
+    .about-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    
+    .about-title {
+        font-size: 50px;
     }
 }
 
+/* Мобільні телефони (до 768px) */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
         height: auto;
     }
-
+    
     .nav-btn {
         height: 50px;
         border-right: none;
         border-bottom: 1px solid var(--border-color);
     }
-
+    
     .title {
         font-size: 40px;
     }
-
+    
     .subtitle {
         font-size: 16px;
     }
-
-    .lets-text,
-    .work-text {
+    
+    .lets-text, .work-text {
         font-size: 32px;
     }
-
-    /* Приховуємо декоративний елемент */
+    
     .vector-block {
-        display: none;
+        display: none; 
     }
 
-    /* Спрощене відображення колажу */
     .collage-container {
         display: flex;
         flex-direction: column;
         padding-bottom: 0;
         gap: 15px;
     }
-
+    
     .collage-container img {
         position: static;
         width: 100%;
         height: auto;
+    }
+
+    /* Адаптація для блоку About (мобільні) */
+    .about-title {
+        font-size: 36px;
     }
 }
