@@ -51,7 +51,6 @@ img {
     text-transform: uppercase;
 }
 
-/* Навігація */
 .nav-links {
     position: absolute;
     bottom: 0;
@@ -138,7 +137,7 @@ img {
     flex-direction: column;
     gap: 10px;
     position: relative;
-    z-index: 2; /* Текст над вектором */
+    z-index: 2;
 }
 
 .subtitle {
@@ -156,7 +155,6 @@ img {
     line-height: 100%;
 }
 
-/* Векторний блок */
 .vector-block {
     position: absolute;
     top: 50%;
@@ -211,7 +209,7 @@ img {
     transform: scale(1.05);
 }
 
-/* MARQUEE (Стрічка) */
+/* MARQUEE */
 .marquee-section {
     width: 100%;
     height: 80px;
@@ -250,48 +248,91 @@ img {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 40px 5%; 
+    padding: 40px 162px; 
 }
 
 .collage-container {
     position: relative;
-    width: 100%;
-    max-width: 1596px;
-    padding-bottom: 32.08%; 
+    width: 1596px;
+    height: 512px;
     margin: 0 auto;
 }
 
 .collage-container img {
     position: absolute;
     object-fit: cover;
-    border-radius: 12px;
 }
 
-.img-1 { width: 32.58%; height: 69.14%; top: 0; left: 0; }
-.img-2 { width: 10.65%; height: 27.92%; top: 72.07%; left: 0; }
-.img-3 { width: 36.15%; height: 69.14%; top: 30.85%; left: 11.59%; z-index: 2; }
-.img-4 { width: 40.91%; height: 100%; top: 0; left: 33.83%; }
-.img-5 { width: 24.43%; height: 57.22%; top: 0; left: 75.56%; }
-.img-6 { width: 24.43%; height: 40.03%; top: 59.96%; left: 75.56%; }
+.img-1 { 
+    width: 520px; 
+    height: 354px; 
+    top: 0; 
+    left: 0; 
+    border-radius: 17px; 
+    z-index: 1; 
+}
+
+.img-2 { 
+    width: 170px; 
+    height: 143px; 
+    top: 369px; 
+    left: 1px; 
+    border-radius: 11px; 
+    z-index: 1; 
+}
+
+.img-3 { 
+    width: 577px; 
+    height: 354px; 
+    top: 158px; 
+    left: 185px; 
+    border-radius: 17px; 
+    z-index: 4; 
+}
+
+.img-4 { 
+    width: 653px; 
+    height: 512px; 
+    top: 0; 
+    left: 540px; 
+    border-radius: 13px; 
+    z-index: 3; 
+}
+
+.img-5 { 
+    width: 390px; 
+    height: 293px; 
+    top: 0; 
+    left: 1206px; 
+    border-radius: 14px; 
+    z-index: 1; 
+}
+
+.img-6 { 
+    width: 390px; 
+    height: 205px; 
+    top: 307px; 
+    left: 1206px; 
+    border-radius: 7px; 
+    z-index: 1; 
+}
 
 /* ABOUT SECTION */
 .about-section {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 40px 5%;
+    padding: 40px 162px;
 }
 
 .about-container {
-    width: 100%;
-    max-width: 1596px;
+    width: 1596px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 80px;
 }
 
-/* Верхній блок з текстом і кнопкою */
 .about-header {
     display: flex;
     justify-content: space-between;
@@ -302,7 +343,6 @@ img {
 }
 
 .about-text-container {
-    max-width: 1413px;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -324,7 +364,6 @@ img {
     line-height: 100%;
 }
 
-/* Кнопка "Know More" */
 .about-btn {
     display: flex;
     align-items: center;
@@ -348,8 +387,174 @@ img {
     transform: scale(1.05);
 }
 
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.about-image-block {
+    width: 783px;
+    height: 710px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.about-main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-info-block {
+    width: 783px;
+    height: 612px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-top {
+    height: 276px;
+    padding: 40px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-bottom {
+    height: 336px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.info-title-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.star-icon {
+    width: 39px;
+    height: 40px;
+}
+
+.info-title-row h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #CACACE;
+}
+
+.info-paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #CACACE;
+}
+
+.contact-details {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #E4E4E6;
+}
+
+.contact-value {
+    font-size: 20px;
+    font-weight: 400;
+    color: #AFB0B6;
+}
+
+.contact-actions {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    height: 68px;
+}
+
+.social-buttons {
+    width: 196px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+    background-color: #070708;
+}
+
+.social-btn {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #1C1C21;
+    border: 1px solid transparent;
+    background-image: 
+        linear-gradient(#1C1C21, #1C1C21), 
+        linear-gradient(180deg, #2F2F37 27.85%, rgba(47, 47, 55, 0) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    width: 447px;
+    height: 63px;
+}
+
+.action-btn-outline {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-white);
+    background-color: #1C1C21;
+    border: 1px solid transparent;
+    background-image: 
+        linear-gradient(#1C1C21, #1C1C21), 
+        linear-gradient(135.66deg, #2F2F37 28.87%, rgba(47, 47, 55, 0) 76.422%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: 0.3s;
+}
+
+.action-btn-outline:hover {
+    transform: scale(1.05);
+}
+
 /* АДАПТИВНІСТЬ */
-/* Планшети (до 1024px) */
 @media (max-width: 1024px) {
     .navbar {
         flex-wrap: wrap;
@@ -393,7 +598,33 @@ img {
         font-size: 44px;
     }
 
-    /* Адаптація для блоку About */
+    .portfolio-collage-section, .about-section {
+        padding: 40px 20px;
+    }
+
+    .collage-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .collage-container img {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-container {
+        width: 100%;
+    }
+
+    .about-text-container {
+        width: 100%;
+        height: auto;
+    }
+
     .about-header {
         flex-direction: column;
         align-items: flex-start;
@@ -403,9 +634,21 @@ img {
     .about-title {
         font-size: 50px;
     }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image-block, .about-info-block {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-image-block {
+        aspect-ratio: 783 / 710;
+    }
 }
 
-/* Мобільні телефони (до 768px) */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
@@ -434,21 +677,38 @@ img {
         display: none; 
     }
 
-    .collage-container {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 0;
-        gap: 15px;
+    .about-title {
+        font-size: 36px;
     }
-    
-    .collage-container img {
-        position: static;
+
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .contact-col {
+        width: 100%;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+        gap: 30px;
+        align-items: stretch;
+        height: auto;
+    }
+
+    .social-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .action-buttons {
+        flex-direction: column;
         width: 100%;
         height: auto;
     }
 
-    /* Адаптація для блоку About (мобільні) */
-    .about-title {
-        font-size: 36px;
+    .action-btn-outline {
+        width: 100%;
+        padding: 20px;
     }
 }
