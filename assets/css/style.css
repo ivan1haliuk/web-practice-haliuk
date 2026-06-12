@@ -20,6 +20,7 @@ img {
     max-width: 100%;
     display: block;
 }
+
 /* HEADER */
 .header {
     width: 100%;
@@ -110,6 +111,7 @@ img {
 .contact-btn:hover {
     transform: scale(1.05);
 }
+
 /* HERO SECTION */
 .hero-section {
     width: 100%;
@@ -206,6 +208,7 @@ img {
 .action-btn:hover {
     transform: scale(1.05);
 }
+
 /* MARQUEE */
 .marquee-section {
     width: 100%;
@@ -239,6 +242,7 @@ img {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
+
 /* COLLAGE GRID */
 .portfolio-collage-section {
     width: 100%;
@@ -502,6 +506,7 @@ img {
 .action-btn-outline:hover {
     transform: scale(1.05);
 }
+
 /* SERVICES SECTION */
 .services-section {
     width: 100%;
@@ -960,8 +965,129 @@ img {
     object-fit: contain;
 }
 
-/* АДАПТИВНІСТЬ */
+/* FAQ SECTION */
+.faq-section {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 162px;
+}
 
+.faq-container {
+    width: 100%;
+    max-width: 1597px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-header {
+    width: 100%;
+    height: 160px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 50px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.faq-text-container {
+    width: 1597px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.faq-subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #797C86;
+    line-height: 100%;
+}
+
+.faq-title {
+    font-weight: 600;
+    font-size: 58px;
+    text-transform: uppercase;
+    color: var(--text-white);
+    line-height: 100%;
+}
+
+.faq-content {
+    width: 1597px;
+    display: flex;
+}
+
+.faq-col {
+    width: 798.5px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.faq-col-left {
+    border-right: 1px solid var(--border-color);
+}
+
+.faq-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 50px;
+    border-bottom: 1px solid var(--border-color);
+    gap: 40px;
+}
+
+.faq-item-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 606.5px;
+}
+
+.faq-item-title {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    line-height: 100%;
+}
+
+.faq-item-paragraph {
+    font-weight: 400;
+    font-size: 18px;
+    color: #797C86;
+    line-height: 150%;
+}
+
+.faq-btn {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: 0.3s;
+}
+
+.faq-btn:hover {
+    background-color: var(--bg-btn-contact);
+}
+
+.faq-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* АДАПТИВНІСТЬ */
 @media (max-width: 1024px) {
     .navbar {
         flex-wrap: wrap;
@@ -1005,7 +1131,7 @@ img {
         font-size: 44px;
     }
 
-    .portfolio-collage-section, .about-section, .services-section, .portfolio-works-section {
+    .portfolio-collage-section, .about-section, .services-section, .portfolio-works-section, .faq-section {
         padding: 40px 20px;
     }
 
@@ -1024,31 +1150,31 @@ img {
         box-shadow: none; 
     }
 
-    .about-container, .services-container, .portfolio-works-container {
+    .about-container, .services-container, .portfolio-works-container, .faq-container {
         width: 100%;
     }
 
-    .about-text-container, .services-text-container, .portfolio-works-text {
+    .about-text-container, .services-text-container, .portfolio-works-text, .faq-text-container {
         width: 100%;
         height: auto;
     }
 
-    .about-header, .services-header, .portfolio-works-header {
+    .about-header, .services-header, .portfolio-works-header, .faq-header {
         flex-direction: column;
         align-items: flex-start;
         height: auto;
         gap: 30px;
     }
     
-    .about-title, .services-title, .portfolio-works-title {
+    .about-title, .services-title, .portfolio-works-title, .faq-title {
         font-size: 50px;
     }
 
-    .about-content, .services-content, .portfolio-cards-container {
+    .about-content, .services-content, .portfolio-cards-container, .faq-content {
         flex-direction: column;
     }
 
-    .about-image-block, .about-info-block, .services-info-block, .services-image-block, .portfolio-card {
+    .about-image-block, .about-info-block, .services-info-block, .services-image-block, .portfolio-card, .faq-col {
         width: 100%;
         height: auto;
     }
@@ -1066,6 +1192,17 @@ img {
     .service-top, .service-bottom, .highlights-list, .highlight-item, .service-title-row, .service-paragraph, .service-bottom h4, .highlight-item span {
         width: 100%;
         height: auto;
+    }
+
+    .faq-col {
+        border-right: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .faq-item {
+        padding: 20px;
+        gap: 20px;
     }
 }
 
@@ -1097,7 +1234,7 @@ img {
         display: none; 
     }
 
-    .about-title, .services-title, .portfolio-works-title {
+    .about-title, .services-title, .portfolio-works-title, .faq-title {
         font-size: 36px;
     }
 
@@ -1155,5 +1292,9 @@ img {
     .highlight-item {
         flex-direction: column;
         text-align: center;
+    }
+
+    .faq-item-title {
+        font-size: 16px;
     }
 }
