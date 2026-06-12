@@ -1,28 +1,88 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Practice</title>
-<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damien Braun - Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/_variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header>
-<h1>Мій вебпроєкт</h1>
-</header>
-<main>
-<section>
-<h2>Головна секція</h2>
-<p>
-Це перша сторінка навчального вебпроєкту.
-</p>
-</section>
-</main>
-<footer>
-<p>
-© 2026 Навчальна практика
-</p>
-</footer>
-<script src="assets/js/main.js"></script>
+    
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">DAMIEN</div>
+            
+            <nav class="nav-links">
+                <a href="#" class="nav-btn home active">Home</a>
+                <a href="#" class="nav-btn about">About Me</a>
+                <a href="#" class="nav-btn portfolio">Portfolio</a>
+                <a href="#" class="nav-btn services">Services</a>
+            </nav>
+
+            <a href="#" class="contact-btn">Contact Me</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-sub">
+                
+                <div class="hero-text-container">
+                    <p class="subtitle">Stunning Photography by</p>
+                    <h1 class="title">Damien Braun</h1>
+                </div>
+                
+                <div class="vector-block">
+                    <img src="assets/images/icons/Vector.png" alt="Abstract Design" class="abstract-img">
+                </div>
+                
+                <div class="hero-action-container">
+                    <div class="lets-row">
+                        <span class="lets-text">Let’s</span>
+                        <a href="#" class="action-btn">
+                            <img src="assets/images/icons/Icon.png" alt="Arrow" class="action-icon">
+                        </a>
+                    </div>
+                    <span class="work-text">Work Together</span>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="marquee-section">
+            <div class="marquee-content">
+                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Event Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Commercial Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Product Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Portrait Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Landscape Photography</span></div>
+                
+                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Event Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Commercial Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Product Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Portrait Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Landscape Photography</span></div>
+            </div>
+        </section>
+
+        <section class="portfolio-collage-section">
+            <div class="collage-container">
+                <img src="assets/images/1.png" alt="Photo 1" class="img-1">
+                <img src="assets/images/2.png" alt="Photo 2" class="img-2">
+                <img src="assets/images/3.png" alt="Photo 3" class="img-3">
+                <img src="assets/images/4.png" alt="Photo 4" class="img-4">
+                <img src="assets/images/5.png" alt="Photo 5" class="img-5">
+                <img src="assets/images/6.png" alt="Photo 6" class="img-6">
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
