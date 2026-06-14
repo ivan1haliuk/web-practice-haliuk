@@ -21,7 +21,7 @@ img {
     display: block;
 }
 
-/*  HEADER  */
+/* HEADER */
 .header {
     width: 100%;
     border-bottom: 1px solid var(--border-color);
@@ -112,7 +112,7 @@ img {
     transform: scale(1.05);
 }
 
-/*  HERO SECTION  */
+/* HERO SECTION */
 .hero-section {
     width: 100%;
     max-width: 1920px;
@@ -209,7 +209,7 @@ img {
     transform: scale(1.05);
 }
 
-/*  MARQUEE  */
+/* MARQUEE */
 .marquee-section {
     width: 100%;
     height: 80px;
@@ -243,7 +243,7 @@ img {
     100% { transform: translateX(-50%); }
 }
 
-/*  COLLAGE GRID  */
+/* COLLAGE GRID */
 .portfolio-collage-section {
     width: 100%;
     max-width: 1920px;
@@ -270,7 +270,7 @@ img {
 .img-5 { width: 390px; height: 293px; top: 0; left: 1206px; border-radius: 14px; z-index: 1; }
 .img-6 { width: 390px; height: 205px; top: 307px; left: 1206px; border-radius: 7px; z-index: 1; }
 
-/*  ABOUT SECTION  */
+/* ABOUT SECTION */
 .about-section {
     width: 100%;
     max-width: 1920px;
@@ -507,7 +507,7 @@ img {
     transform: scale(1.05);
 }
 
-/*  SERVICES SECTION  */
+/* SERVICES SECTION */
 .services-section {
     width: 100%;
     max-width: 1920px;
@@ -761,7 +761,7 @@ img {
     border-bottom-left-radius: 100px;
 }
 
-/*  PORTFOLIO WORKS SECTION  */
+/* PORTFOLIO WORKS SECTION */
 .portfolio-works-section {
     width: 100%;
     max-width: 1920px;
@@ -965,7 +965,7 @@ img {
     object-fit: contain;
 }
 
-/*  FAQ SECTION  */
+/* FAQ SECTION */
 .faq-section {
     width: 100%;
     max-width: 1920px;
@@ -1087,7 +1087,7 @@ img {
     object-fit: contain;
 }
 
-/*  TESTIMONIALS SECTION */
+/* TESTIMONIALS SECTION */
 .testimonials-section {
     width: 100%;
     max-width: 1920px;
@@ -1173,12 +1173,39 @@ img {
 }
 
 .testimonials-slider-buttons {
-    margin: 0;
+    width: 160px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px;
+    border-radius: 100px;
+    border: 1px solid var(--border-color);
+    background-color: #070708;
 }
 
 .testimonials-view-all {
     width: 245px;
     height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--text-white);
+    background-color: #1C1C21;
+    border: 1px solid transparent;
+    background-image: 
+        linear-gradient(#1C1C21, #1C1C21), 
+        linear-gradient(135.66deg, #2F2F37 28.87%, rgba(47, 47, 55, 0) 76.42%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: 0.3s;
+}
+
+.testimonials-view-all:hover {
+    transform: scale(1.05);
 }
 
 .testimonials-cards-container {
@@ -1197,20 +1224,20 @@ img {
     background: #0E0E10;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
 }
 
 .testimonial-card-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 }
 
 .testimonial-client-info {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
 }
 
 .client-name {
@@ -1268,28 +1295,48 @@ img {
     display: flex;
     gap: 5px;
     align-items: center;
-    width: 140px;
-    height: 24px;
 }
 
 .testimonial-stars img {
     width: 24px;
     height: 24px;
     border-radius: 2px;
-    object-fit: contain;
 }
 
 .testimonial-text {
-    width: 100%;
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
     color: #E4E4E6;
-    text-align: left;
 }
 
+/* BOTTOM LOGO SECTION */
+.bottom-logo-section {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 80px 162px 100px 162px;
+}
 
-/*  АДАПТИВНІСТЬ  */
+.bottom-logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom-massive-logo {
+    width: 100%;
+    max-width: 1058px;
+    height: auto;
+    object-fit: contain;
+}
+
+.bottom-marquee {
+    border-top: 1px solid var(--border-color);
+    background-color: #0E0E10;
+}
+
+/* АДАПТИВНІСТЬ */
 
 @media (max-width: 1024px) {
     .navbar {
@@ -1424,6 +1471,14 @@ img {
         gap: 20px;
         padding: 20px;
     }
+
+    .bottom-logo-section {
+        padding: 40px 20px;
+    }
+    
+    .bottom-logo-container {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1494,6 +1549,7 @@ img {
         width: 100%;
         align-items: stretch;
         gap: 20px;
+        height: auto;
     }
     
     .slider-buttons, .portfolio-slider-buttons, .testimonials-slider-buttons {
