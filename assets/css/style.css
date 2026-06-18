@@ -794,7 +794,7 @@ img {
   gap: 20px;
 }
 
-.service-bottom h4 {
+.service-bottom h3 {
   font-size: 18px;
   font-weight: 500;
   color: #cacace;
@@ -3112,7 +3112,7 @@ img {
     flex-direction: column !important;
     gap: 20px !important;
   }
-  .service-bottom h4 {
+  .service-bottom h3 {
     font-size: 18px !important;
     font-weight: 500 !important;
     line-height: 1.5 !important;
@@ -4625,7 +4625,7 @@ img {
     gap: 16px !important;
   }
 
-  .service-bottom h4 {
+  .service-bottom h3 {
     font-family: "Manrope", sans-serif !important;
     font-weight: 500 !important;
     font-size: 14px !important;
