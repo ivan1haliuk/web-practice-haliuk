@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,18 +14,22 @@
 </head>
 <body>
     
-    <header class="header">
+    <header class="header" id="main-header">
         <div class="navbar">
             <div class="logo">DAMIEN</div>
             
-            <nav class="nav-links">
+            <nav class="nav-links" id="nav-links">
                 <a href="#" class="nav-btn home active">Home</a>
                 <a href="#" class="nav-btn about">About Me</a>
                 <a href="#" class="nav-btn portfolio">Portfolio</a>
                 <a href="#" class="nav-btn services">Services</a>
             </nav>
 
-            <a href="#" class="contact-btn">Contact Me</a>
+            <a href="#" class="contact-btn" id="open-modal-btn">Contact Me</a>
+
+<div class="burger-menu" id="burger-menu">
+    <img src="assets/images/icons/Icon%20menu.png" alt="Menu">
+</div>
         </div>
     </header>
 
@@ -56,23 +60,25 @@
         </section>
 
         <section class="marquee-section">
+            <h2 style="display: none;">Photography Specialties</h2>
             <div class="marquee-content">
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Event Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Commercial Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Product Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Portrait Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Landscape Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Event Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Commercial Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Product Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Portrait Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Landscape Photography</span></div>
             </div>
             <div class="marquee-content">
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Event Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Commercial Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Product Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Portrait Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Landscape Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Event Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Commercial Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Product Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Portrait Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Landscape Photography</span></div>
             </div>
         </section>
 
         <section class="portfolio-collage-section">
+            <h2 style="display: none;">Portfolio Gallery</h2>
             <div class="collage-container">
                 <img src="assets/images/1.png" alt="Photo 1" class="img-1">
                 <img src="assets/images/2.png" alt="Photo 2" class="img-2">
@@ -127,7 +133,7 @@
                             </div>
                             
                             <div class="contact-actions">
-                                <div class="social-buttons">
+                                <div class="social-buttons social-icon-container">
                                     <a href="https://www.facebook.com/" target="_blank" class="social-btn">
                                         <img src="assets/images/icons/Facebook.png" alt="Facebook">
                                     </a>
@@ -191,22 +197,22 @@
                             
                             <div class="highlights-list">
                                 <div class="highlight-item">
-                                    <img src="assets/images/icons/Black Star.png" alt="Star" class="highlight-icon">
+                                    <img src="assets/images/icons/Black%20Star.png" alt="Star" class="highlight-icon">
                                     <span>Coverage for weddings, parties, corporate functions, and more.</span>
                                 </div>
                                 
                                 <div class="highlight-item">
-                                    <img src="assets/images/icons/Black Star.png" alt="Star" class="highlight-icon">
+                                    <img src="assets/images/icons/Black%20Star.png" alt="Star" class="highlight-icon">
                                     <span>Skilled photographers who know how to seize the moment.</span>
                                 </div>
                                 
                                 <div class="highlight-item">
-                                    <img src="assets/images/icons/Black Star.png" alt="Star" class="highlight-icon">
+                                    <img src="assets/images/icons/Black%20Star.png" alt="Star" class="highlight-icon">
                                     <span>A mix of candid and posed shots for a comprehensive story.</span>
                                 </div>
                                 
                                 <div class="highlight-item">
-                                    <img src="assets/images/icons/Black Star.png" alt="Star" class="highlight-icon">
+                                    <img src="assets/images/icons/Black%20Star.png" alt="Star" class="highlight-icon">
                                     <span>Quick turnaround for you to relive the day's highlights.</span>
                                 </div>
                             </div>
@@ -311,7 +317,7 @@
                         <div class="faq-item faq-item-open">
                             <div class="faq-item-text-container">
                                 <h3 class="faq-item-title">What type of photography do you specialize in?</h3>
-                                <p class="faq-item-paragraph">I specialize in [Portrait, Landscape, Event, etc.] photography, capturing moments that tell unique stories.</p>
+                                <p class="faq-item-paragraph" style="display: block;">I specialize in [Portrait, Landscape, Event, etc.] photography, capturing moments that tell unique stories.</p>
                             </div>
                             <button class="faq-btn">
                                 <img src="assets/images/icons/Up.png" alt="Up" class="faq-icon">
@@ -321,6 +327,7 @@
                         <div class="faq-item">
                             <div class="faq-item-text-container">
                                 <h3 class="faq-item-title">How can I book a photography session with you?</h3>
+                                <p class="faq-item-paragraph">You can book a session by reaching out through the contact form or sending a direct email.</p>
                             </div>
                             <button class="faq-btn">
                                 <img src="assets/images/icons/Down.png" alt="Down" class="faq-icon">
@@ -330,6 +337,7 @@
                         <div class="faq-item">
                             <div class="faq-item-text-container">
                                 <h3 class="faq-item-title">What equipment do you use for your photography?</h3>
+                                <p class="faq-item-paragraph">I use professional-grade cameras and lighting equipment to ensure the highest quality.</p>
                             </div>
                             <button class="faq-btn">
                                 <img src="assets/images/icons/Down.png" alt="Down" class="faq-icon">
@@ -338,7 +346,8 @@
 
                         <div class="faq-item">
                             <div class="faq-item-text-container">
-                                <h3 class="faq-item-title">Can I request a specific location for a</h3>
+                                <h3 class="faq-item-title">Can I request a specific location for a shoot?</h3>
+                                <p class="faq-item-paragraph">Absolutely! We can shoot at a studio or at a specific location of your choice.</p>
                             </div>
                             <button class="faq-btn">
                                 <img src="assets/images/icons/Down.png" alt="Down" class="faq-icon">
@@ -352,6 +361,7 @@
                         <div class="faq-item">
                             <div class="faq-item-text-container">
                                 <h3 class="faq-item-title">What is your editing process like?</h3>
+                                <p class="faq-item-paragraph">All images go through a thorough selection process, color correction, and meticulous retouching.</p>
                             </div>
                             <button class="faq-btn">
                                 <img src="assets/images/icons/Down.png" alt="Down" class="faq-icon">
@@ -361,25 +371,27 @@
                         <div class="faq-item">
                             <div class="faq-item-text-container">
                                 <h3 class="faq-item-title">Are digital files included in your photography packages?</h3>
+                                <p class="faq-item-paragraph">Yes, high-resolution digital files are included in all standard packages.</p>
                             </div>
                             <button class="faq-btn">
                                 <img src="assets/images/icons/Down.png" alt="Down" class="faq-icon">
                             </button>
                         </div>
 
-                        <div class="faq-item faq-item-open">
+                        <div class="faq-item">
                             <div class="faq-item-text-container">
                                 <h3 class="faq-item-title">Do you offer prints of your photographs?</h3>
                                 <p class="faq-item-paragraph">Yes, prints are available for purchase. Explore the 'Prints' section for more details on sizes and pricing.</p>
                             </div>
                             <button class="faq-btn">
-                                <img src="assets/images/icons/Up.png" alt="Up" class="faq-icon">
+                                <img src="assets/images/icons/Down.png" alt="Down" class="faq-icon">
                             </button>
                         </div>
 
                         <div class="faq-item">
                             <div class="faq-item-text-container">
                                 <h3 class="faq-item-title">How long does it take to receive the edited photos after a session?</h3>
+                                <p class="faq-item-paragraph">Usually, it takes about 1-2 weeks depending on the scope of the project.</p>
                             </div>
                             <button class="faq-btn">
                                 <img src="assets/images/icons/Down.png" alt="Down" class="faq-icon">
@@ -429,7 +441,7 @@
                                 <h3 class="client-name">Emily Johnson</h3>
                                 <span class="client-location">USA, California</span>
                             </div>
-                            <div class="testimonial-socials">
+                            <div class="testimonial-socials social-icon-container">
                                 <a href="https://www.facebook.com/" target="_blank" class="social-btn-small">
                                     <img src="assets/images/icons/Facebook.png" alt="Facebook">
                                 </a>
@@ -459,7 +471,7 @@
                                 <h3 class="client-name">John Smith</h3>
                                 <span class="client-location">USA, California</span>
                             </div>
-                            <div class="testimonial-socials">
+                            <div class="testimonial-socials social-icon-container">
                                 <a href="https://www.facebook.com/" target="_blank" class="social-btn-small">
                                     <img src="assets/images/icons/Facebook.png" alt="Facebook">
                                 </a>
@@ -489,7 +501,7 @@
                                 <h3 class="client-name">Samantha Davis</h3>
                                 <span class="client-location">USA, California</span>
                             </div>
-                            <div class="testimonial-socials">
+                            <div class="testimonial-socials social-icon-container">
                                 <a href="https://www.facebook.com/" target="_blank" class="social-btn-small">
                                     <img src="assets/images/icons/Facebook.png" alt="Facebook">
                                 </a>
@@ -519,33 +531,125 @@
         </section>
 
         <section class="bottom-logo-section">
+            <h2 style="display: none;">Damien Logo Display</h2>
             <div class="bottom-logo-container">
                 <img src="assets/images/icons/Damien.png" alt="Damien" class="bottom-massive-logo">
             </div>
         </section>
 
         <section class="marquee-section bottom-marquee">
+            <h2 style="display: none;">Other Services</h2>
             <div class="marquee-content">
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Event Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Comercial Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Product Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Wedding Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Landscape Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Branding Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Portrait Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Event Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Comercial Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Product Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Wedding Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Landscape Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Branding Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Portrait Photography</span></div>
             </div>
             <div class="marquee-content">
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Event Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Comercial Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Product Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Wedding Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Landscape Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Branding Photography</span></div>
-                <div class="marquee-item"><img src="assets/images/icons/Clip path group.png" alt="Icon"><span>Portrait Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Event Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Comercial Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Product Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Wedding Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Landscape Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Branding Photography</span></div>
+                <div class="marquee-item"><img src="assets/images/icons/Clip%20path%20group.png" alt="Icon"><span>Portrait Photography</span></div>
             </div>
         </section>
 
     </main>
+
+    <footer class="main-footer">
+        <div class="footer-top-container">
+            <img src="assets/images/icons/Right%20vector.png" alt="Decoration" class="footer-vector-left">
+            
+            <div class="footer-top-content">
+                <div class="footer-left-block">
+                    <span class="footer-tagline">A more meaningful home for photography</span>
+                    <div class="footer-call-to-action">
+                        <div class="footer-cta-row">
+                            <span class="footer-cta-text">Let’s</span>
+                            <a href="#" class="footer-cta-btn">
+                                <img src="assets/images/icons/Icon.png" alt="Arrow">
+                            </a>
+                        </div>
+                        <span class="footer-cta-text">Work Together</span>
+                    </div>
+                </div>
+                
+                <div class="footer-right-block">
+                    <div class="footer-links-col">
+                        <h4 class="footer-links-title">Home</h4>
+                        <a href="#" class="footer-link">About Me</a>
+                        <a href="#" class="footer-link">My Works</a>
+                        <a href="#" class="footer-link">Testimonials</a>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4 class="footer-links-title">Clients</h4>
+                        <a href="#" class="footer-link">Klovesto</a>
+                        <a href="#" class="footer-link">Nukeway</a>
+                        <a href="#" class="footer-link">Cloven’s</a>
+                        <a href="#" class="footer-link">MenVol</a>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4 class="footer-links-title">Portfolio</h4>
+                        <a href="#" class="footer-link">Events</a>
+                        <a href="#" class="footer-link">Portrait</a>
+                        <a href="#" class="footer-link">Branding</a>
+                        <a href="#" class="footer-link">Commerciale</a>
+                        <a href="#" class="footer-link">Wedding</a>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4 class="footer-links-title">Services</h4>
+                        <a href="#" class="footer-link">Portraits</a>
+                        <a href="#" class="footer-link">Events</a>
+                        <a href="#" class="footer-link">Commercial</a>
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/images/icons/Left%20vector.png" alt="Decoration" class="footer-vector-right">
+        </div>
+
+        <div class="footer-bottom-container">
+            <div class="footer-bottom-left">
+                <a href="#" class="footer-bottom-link">Terms & Conditions</a>
+                <div class="footer-divider"></div>
+                <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/" target="_blank" class="social-btn-footer">
+                    <img src="assets/images/icons/Facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/" target="_blank" class="social-btn-footer">
+                    <img src="assets/images/icons/Twitter.png" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" class="social-btn-footer">
+                    <img src="assets/images/icons/LinkedIn.png" alt="LinkedIn">
+                </a>
+            </div>
+            
+            <div class="footer-bottom-right">
+                <span>© 2024 Damien Braun Photography. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="about-title" style="font-size: 30px; margin-bottom: 20px;">Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required class="modal-input">
+                <input type="email" placeholder="Your Email" required class="modal-input">
+                <textarea placeholder="Your Message" required class="modal-textarea"></textarea>
+                <button type="submit" class="action-btn-outline" style="width: 100%; border: none;">Send Message</button>
+            </form>
+        </div>
+    </div>
 
     <script src="assets/js/main.js"></script>
 </body>
